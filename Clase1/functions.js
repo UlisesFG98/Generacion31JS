@@ -36,17 +36,7 @@ console.log(sumar(3,15)); // mandamos a llamar a la funcion y le asignamos los p
 */
 
 
-const sumar = function sumarNumeros(a, b){
-  if(typeof a !== "number" || typeof b !== "number") {
-    console.error("Alguno de los parametrosno no es un numero");
-    return;
-  }else{
-    let resultado = a + b;
-    return resultado;
-  }
-}
-console.log(sumar(3,5)); // mandamos a llamar a la funcion y le asignamos los parametros
-
+//Ejercicio 1
 /*
 function saludo (nombre){
   let saludar = console.log("Hola" , nombre);
@@ -56,6 +46,6 @@ saludo("Ulises");
 */
 
 function saludo (nombre){
-  return ("Hola " + nombre)
+  return (`Hola ${nombre} buenjos dias`)
 }
 console.log(saludo("Ulises"));
