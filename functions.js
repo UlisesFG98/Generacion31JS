@@ -46,3 +46,16 @@ const sumar = function sumarNumeros(a, b){
   }
 }
 console.log(sumar(3,5)); // mandamos a llamar a la funcion y le asignamos los parametros
+
+/*
+function saludo (nombre){
+  let saludar = console.log("Hola" , nombre);
+  return saludar
+}
+saludo("Ulises");
+*/
+
+function saludo (nombre){
+  return ("Hola " + nombre)
+}
+console.log(saludo("Ulises"));
