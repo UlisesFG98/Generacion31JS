@@ -49,3 +49,19 @@ function saludo (nombre){
   return (`Hola ${nombre} buenjos dias`)
 }
 console.log(saludo("Ulises"));
+
+//Ejercicio 2
+// funcion si un numero es par o impar
+
+function parImpar (numero){
+  if(typeof numero !== "number"){
+    console.error("No es un numero");
+    return;
+  }
+  if(numero % 2 == 0){
+    return `El numero: ${numero} si es par`;
+  }
+  return `El numero: ${numero} si es impar`;
+}
+
+console.log(parImpar(8));
