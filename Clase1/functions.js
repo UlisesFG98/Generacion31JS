@@ -149,16 +149,16 @@ function esVocal(caracter) {
 console.log(esVocal("A"));
 console.log(esVocal("b"));
 console.log(esVocal("o"));
-console.log(esVocal("1"));
+console.log(esVocal(1));
 console.log(esVocal("%"));
 console.log(esVocal("ab"), "\n\n");
 
 
 /*
  Ejercicio #3
-Crea una función llamada generar_caracteres() que tome como parámetro un número entero (n)
-y un carácter, retornar el carácter multiplicado por n. Por ejemplo, generar_caracteres(5,x),
-debería retornar «xxxxx».
+ Crea una función llamada generar_caracteres() que tome como parámetro un número entero (n)
+ y un carácter, retornar el carácter multiplicado por n. Por ejemplo, generar_caracteres(5,x),
+ debería retornar «xxxxx».
 */
 
 console.log("Resultados del ejercicio 3")
