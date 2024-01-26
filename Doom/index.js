@@ -63,4 +63,5 @@ document.addEventListener("DOMContentLoaded", () => {
   console.log(dom_2.innerHTML)
   console.log(dom_2.offsetWidth)
 
+
 })
