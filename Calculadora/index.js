@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   allButtons.forEach(button => {
     button.addEventListener('click', () => {
       //console.log(boton.textContent)
-      const pressedButton = button.textContent
+      let pressedButton = button.textContent
       if (button.id === 'c') {
         //screen.textContent = '0'
         clearScreen()
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", () => {
   })
 
   const clearScreen = () => screen.innerHTML = '0'
+
 
   const removeLastDigit = () => {
     let currentContent = screen.innerHTML
