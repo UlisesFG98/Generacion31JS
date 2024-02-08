@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CRUD</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/Practica/main.css">
+
+  </head>
+  <body>
+    <div class="container" id="title">
+      <h1>CRUD</h1>
+    </div>
+    <div class="container">
+      <div class="container mb-5">
+        <div class="row">
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="inputName" placeholder="Nombre">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Edad</label>
+              <input type="number" class="form-control" id="inputAge" placeholder="Edad">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Teléfono</label>
+              <input type="number" class="form-control" id="inputPhone" placeholder="Teléfono">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="inputEmail" placeholder="Correo Electrónico">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Género</label>
+              <select class="form-select" id="inputGender">
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Fecha de Nacimiento</label>
+              <input type="date" class="form-control" id="inputBirthDate">
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Lenguaje Favorito de Programación</label>
+              <div>
+                <input type="checkbox" id="checkboxJavaScript" value="JavaScript">
+                <label for="checkboxJavaScript">JavaScript</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxPython" value="Python">
+                <label for="checkboxPython">Python</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxJava" value="Java">
+                <label for="checkboxJava">Java</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxCSharp" value="C#">
+                <label for="checkboxCSharp">C#</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxRuby" value="Ruby">
+                <label for="checkboxRuby">Ruby</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxSwift" value="Swift">
+                <label for="checkboxSwift">Swift</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxKotlin" value="Kotlin">
+                <label for="checkboxKotlin">Kotlin</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxGo" value="Go">
+                <label for="checkboxGo">Go</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxRust" value="Rust">
+                <label for="checkboxRust">Rust</label>
+              </div>
+              <div>
+                <input type="checkbox" id="checkboxPHP" value="PHP">
+                <label for="checkboxPHP">PHP</label>
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label class="form-label">Editor de Código</label>
+              <select class="form-select" id="inputCodeEditor">
+                <option value="Visual Studio Code">Visual Studio Code</option>
+                <option value="Sublime Text">Sublime Text</option>
+                <option value="Atom">Atom</option>
+                <option value="Vim">Vim</option>
+                <option value="Emacs">Emacs</option>
+                <option value="PyCharm">PyCharm</option>
+                <option value="Eclipse">Eclipse</option>
+                <option value="NetBeans">NetBeans</option>
+                <option value="IntelliJ IDEA">IntelliJ IDEA</option>
+                <option value="Xcode">Xcode</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Descripción del Usuario</label>
+              <input type="text" class="form-control" id="inputDescriptionUser" placeholder="Descripción del Usuario">
+            </div>
+            <button type="button"  class="btn btn-primary" id="btnAdd" onclick="funcionAddData()">Enviar Datos</button>
+            <button type="button" class="btn btn-primary" id="btnUpdate">Actualizar Datos</button>
+          </form>
+        </div>
+        <hr>
+        <table class="table table-bordered" id="tableData">
+          <thead>
+            <tr>
+              <th>Nombre</th>
+              <th>Edad</th>
+              <th>Teléfono</th>
+              <th>Correo Electronico</th>
+              <th>Genero</th>
+              <th>Fecha de Nacimiento</th>
+              <th>Lenguajes Favoritos de programacion</th>
+              <th>Editor de Codigo Favoritos</th>
+              <th>Descripsion del usuario</th>
+              <th>Accion</th>
+              <th>Accion</th>
+            </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+    <script type="module" src="./function.js"></script>
+</html>

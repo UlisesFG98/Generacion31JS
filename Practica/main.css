@@ -1,0 +1,12 @@
+body {
+  background-color: #1b1b1b;
+  color: white;
+}
+
+#title {
+  text-align: center;
+}
+
+#btnUpdate {
+  display: none;
+}
